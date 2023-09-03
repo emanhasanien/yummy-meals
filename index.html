@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+
+        <!-- ************************* Css Animation File  **********************-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- ************************* Font Awsome File  **********************-->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- ************************* Bootstrap File  **********************-->
+     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+         <!-- ************************* main css File  **********************-->
+         <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <div class="loading">
+    <span class="loader"></span>
+  </div>
+
+  <section id="mainSidebar" class=" d-flex flex-row fixed-top">
+ 
+        <div class="navContainer bg-black  " >
+            
+           <div class="navItems mt-5 d-flex flex-column justify-content-between min-vh-100  text-white p-4">
+
+               <ul class="d-flex flex-column justify-content-between ">
+              <li>
+                <a id="SearchLink" class="nav-link  active  animate__animated  animate__backInUp animate__delay-1s" href="#">Search</a>
+              </li>
+
+              <li>
+                <a id="CategoriesLink" class="nav-link animate__animated  animate__backInUp  animate__delay-1s" href="#">Categories</a>
+              </li>
+
+              <li>
+                <a id="AreaLink" class="nav-link animate__animated  animate__backInUp  animate__delay-1s" href="#">Area</a>
+              </li>
+
+              <li>
+                <a id="ingredientsLink" class="nav-link animate__animated  animate__backInUp  animate__delay-1s" href="#">Ingredients</a>
+              </li>
+
+              <li>
+                <a id="contactLink" class="nav-link animate__animated  animate__backInUp  animate__delay-1s" href="#">Contact Us</a>
+              </li>
+               </ul>
+
+
+              <div id="footer" class="mb-4 p-3">
+            <div class="icons">
+               <span><i class="fa-brands fa-facebook"></i></span>
+               <span><i class="fa-brands fa-twitter"></i></span>
+               <span><i class="fa-solid fa-globe"></i></span>
+            </div>
+            <p>Copyright Â &copy; 2019 All Rights Reserved.</p>
+              </div>
+           </div>
+
+        
+        </div>
+
+       <div class=" barIcon text-dark d-flex flex-column justify-content-between align-items-center bg-white min-vh-100 py-4 px-2">
+        <img src="./images/juice1.jpg" class="w-100 rounded-circle" alt="yummy image">
+
+        <div class="iconsSide fs-2">
+          <i id="barIcon" class="fa-solid fa-bars"></i> 
+          <i id="closeIcon" class="fa-solid fa-xmark d-none"></i>
+        </div>
+
+        <div>
+         <p class="mb-0"><i class="fa-solid fa-globe"></i></p> 
+          <p><i class="fa-solid fa-share-nodes"></i></p>
+        </div>
+      
+      
+       </div>
+
+</section> 
+
+<div class="searchArea py-5 d-none">
+  <div class="contanier">
+   
+
+    <div class="row">
+
+      <div class="col-md-5">
+        <div><input id="SearchByName" type="text" placeholder="Search By Name" class="form-control"></div>
+      </div>
+      
+      <div class="col-md-5">
+        <div><input id="SearchByFirstletter" type="text" placeholder="Search By First Letter"  class="form-control"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<section id="home">
+  <div class="container mt-5">
+    <div id="mealsRow" class="row g-3">
+
+  
+    </div>
+  </div>
+
+</section>
+
+<section id="mealDetailsArea">
+ 
+
+</section>
+
+
+<section id="mealCatogeries" class="py-5">
+
+  <div class="container">
+    <div class="row g-3" id="catogeryRow">
+      
+      
+    </div>
+  </div>
+
+</section>
+
+<section id="mealsOfCatogeryArea">
+  <div class="container">
+    <div class="row g-3" id="mealsCatogeryRow">
+      
+      
+    </div>
+  </div>
+
+</section>
+
+<section id="mealAreaSection">
+
+  <div class="container">
+    <div class="row text-white  text-center g-4" id="mealAreaContainer">
+
+  
+
+    </div>
+  </div>
+
+</section>
+
+<section id="MealsOfEachAreaSection">
+
+  <div class="container">
+    <div class="row text-white  text-center g-4" id="MealsOfEachArea">
+
+  
+
+    </div>
+  </div>
+
+</section>
+
+
+<section id="ingredientsSection">
+
+  <div class="container">
+
+    <div class="row text-center text-white" id="ingredientsContainer">
+    
+     
+
+
+    </div>
+  </div>
+</section>
+
+<section id="mealsOfTargetIntegrites">
+
+  <div class="container">
+
+    <div class="row g-4 text-center text-white" id="mealsOfTargetIntegritesContainer">
+    
+     
+
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="d-none">
+
+  <div class="container ">
+    <div class="formcontainer">
+      <form >
+        <div class="row gy-3">
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Enter Your Name...">
+          </div>
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Enter Your Email...">
+          </div>
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Enter Your Phone...">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Enter Your Age...">
+          </div>
+
+
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Enter Your Password...">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Enter Your Repassword ...">
+          </div>
+        </div>
+
+        <button class="btn btn-outline-danger text-danger  mt-4 ">Submit</button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+     
+</body>
+
+
+
+
+ <!-- ************************* jQuery scrih3t File  **********************-->
+<script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+<!-- ************************* Bootstrap script File  **********************-->
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<!-- ************************* Main script script File  **********************-->
+<script src="./js/index.js"></script>
+</html>
